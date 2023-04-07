@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login-Registration</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <header>
+      <h1 id="logo">Logo</h1>
+      <nav id="header-nav">
+        <a href="#">About</a>
+        <a href="#">Product</a>
+        <a href="#">Contact Us</a>
+        <button id="login-button-popup">Login</button>
+      </nav>
+      <div id="menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </header>
+
+    <div id="login-signup-container">
+      <span id="close"><ion-icon name="close"></ion-icon></span>
+
+      <div id="login-container">
+        <h1 class="title">Login</h1>
+        <form id="login-form" action="#" method="post" autocomplete="off">
+          <div class="input-wrapper">
+            <span>
+              <ion-icon name="person-outline"></ion-icon>
+            </span>
+            <input type="text" id="login-username" name="username" required />
+            <label for="login-username">Username</label>
+          </div>
+
+          <div class="input-wrapper">
+            <span>
+              <ion-icon name="lock-closed-outline"></ion-icon>
+            </span>
+            <input
+              type="password"
+              id="login-password"
+              name="password"
+              required
+            />
+            <label for="login-password">Password</label>
+          </div>
+
+          <button id="login-button">Log In</button>
+        </form>
+
+        <p id="no-account">
+          Don't have an account?
+          <a href="#" id="signup-link">Sign Up</a>
+        </p>
+      </div>
+
+      <div id="signup-container">
+        <h1 class="title">Registration</h1>
+        <form id="signup-form" action="#" method="post" autocompete="off">
+          <div class="input-wrapper">
+            <span>
+              <ion-icon name="person-outline"></ion-icon>
+            </span>
+            <input type="text" id="signup-username" name="username" required />
+            <label for="signup-username">Username</label>
+          </div>
+
+          <div class="input-wrapper">
+            <span>
+              <ion-icon name="mail-outline"></ion-icon>
+            </span>
+            <input type="email" id="signup-email" name="email" required />
+            <label for="signup-email">Email</label>
+          </div>
+
+          <div class="input-wrapper">
+            <span>
+              <ion-icon name="lock-closed-outline"></ion-icon>
+            </span>
+            <input
+              type="password"
+              id="signup-password"
+              name="password"
+              required
+            />
+            <label for="signup-password">Password</label>
+          </div>
+
+          <div class="input-wrapper">
+            <span>
+              <ion-icon name="lock-closed-outline"></ion-icon>
+            </span>
+            <input
+              type="password"
+              id="signup-password2"
+              name="password2"
+              required
+            />
+            <label for="signup-password2">Confirm password</label>
+          </div>
+
+          <button id="signup-button">Sign Up</button>
+        </form>
+
+        <p id="have-account">
+          Already have an account?
+          <a href="#" id="login-link">Log In</a>
+        </p>
+      </div>
+    </div>
+    <script src="index.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
