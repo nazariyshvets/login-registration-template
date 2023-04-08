@@ -36,11 +36,6 @@ closeButton.addEventListener("click", (event) => {
 });
 
 menu.addEventListener("click", (event) => {
-  if (menu.classList.contains("active")) {
-    headerNav.classList.remove("active");
-    menu.classList.remove("active");
-  } else {
-    headerNav.classList.add("active");
-    menu.classList.add("active");
-  }
+  menu.classList.toggle("active");
+  headerNav.classList.toggle("active");
 });

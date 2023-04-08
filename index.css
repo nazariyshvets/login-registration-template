@@ -49,7 +49,6 @@ header {
 #header-nav {
   display: flex;
   column-gap: 40px;
-  overflow: hidden;
 }
 
 #header-nav a {
@@ -264,6 +263,10 @@ header {
     font-size: 14px;
   }
 
+  body {
+    padding-top: 60px;
+  }
+
   header {
     height: 60px;
     padding-inline: 40px;
@@ -280,6 +283,7 @@ header {
     position: absolute;
     top: 100%;
     left: 0;
+    overflow: hidden;
     transition: width 1s;
   }
 
@@ -324,6 +328,10 @@ header {
 @media screen and (max-width: 480px) {
   html {
     font-size: 12px;
+  }
+
+  body {
+    padding-top: 50px;
   }
 
   header {
